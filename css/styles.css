@@ -1,3 +1,41 @@
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+     h1 {
+          font-size: 60px;
+     }
+
+     #input {
+    font-size: 30px;
+    border-radius: 4px;
+    flex-grow: 1;
+    padding: 1.3em 2em;
+    border: none;
+     }
+
+     #submitBtn {
+    padding: 1em 2em;
+    border-radius: 4px;
+    border: none;
+    background-color: #2d9800;
+    color: #fff;
+    cursor: pointer;
+    font-size: 35px;
+     }
+
+     h5 {
+     font-size: 40px;
+     }
+
+     #results {
+     display: flex;
+     flex-wrap: wrap;
+     }
+}
+
+
+
 body {
      font-family: helvetica,arial, 'san-serif';
      background-color: #c2c2c2;
@@ -48,3 +86,4 @@ body {
      transform: translateY(-12px);
      cursor: pointer;
 }
+
