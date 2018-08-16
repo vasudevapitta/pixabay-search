@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Pixabay API</title>
+    <meta name="description" content="Image search engine">
+    <meta name="author" content="vasudeva pitta">
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav>
+        
+        <div class='each'>
+            <h1>PIXABAY SEARCH</h1>
+        </div>
+
+        <div class='each'>
+            <input type='text' placeholder='Search Images from Pixabay...' id='input' size=30 required>
+
+            <input type='button' value='Search' id='submitBtn' onclick='newSearch()'>
+        </div>
+
+        <h5>Coded with <span class='love'>❤</span> by <a href='https://vasudevapitta.github.io/New-Responsive-Portfolio/' target='_blank' title='Click to visit my website'>Vasudeva Pitta</a></h5>
+        
+    </nav>
+
+    <div id='results'>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>
