@@ -7,7 +7,7 @@ input.keypress((e) => {
 
 function newSearch() {
     const resultsDiv = $('#results');
-    resultsDiv.html(' ');
+    resultsDiv.html('<img src="./giphy.webp" alt="loading" class="loading">');
     const fragment = document.createDocumentFragment();
 
     function handleSuccess() {
@@ -20,6 +20,7 @@ function newSearch() {
                 const template = `<a href='${img}' title='click to view full image' target='_blank'><img src=${img} alt='Image of ${searchTerm}' class='thumbnail'></a>`
                 $(fragment).append(template);
             }
+            resultsDiv.html('');
             resultsDiv.append(fragment);
         } else {
             alert(`Could not find Images of ${searchTerm}`);
