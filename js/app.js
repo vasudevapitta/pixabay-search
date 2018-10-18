@@ -1,5 +1,3 @@
-(function (){
-
 const input = $('#input');//grabs the user search input field
 input.keypress((e) => {
     if (e.keyCode === 13) {
@@ -53,5 +51,3 @@ input.keypress((e) => {
     asyncRequestObject.send();
 
 };
-
-})();
